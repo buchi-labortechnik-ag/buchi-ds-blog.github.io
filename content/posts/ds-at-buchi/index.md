@@ -1,9 +1,9 @@
 ---
-title: "Data Science at BUCHI"
+title: "Data Science at BÜCHI"
 subtitle: ""
 date: 2023-08-28T18:34:46+02:00
 lastmod: 2023-08-28T18:34:46+02:00
-draft: true
+draft: false
 author: ""
 authorLink: ""
 description: ""
@@ -61,9 +61,9 @@ seo:
 
 <!--more-->
 
-## About BUCHI
+## About BÜCHI
 
-BUCHI is a world-leading supplier of laboratory technology solutions for research and development, quality assurance, and production for various industries, including pharmaceuticals, chemicals, food & feed, beverage, environmental analysis, and academia.
+BÜCHI is a world-leading supplier of laboratory technology solutions for research and development, quality assurance, and production for various industries, including pharmaceuticals, chemicals, food & feed, beverage, environmental analysis, and academia.
 
 What started as a craftsman’s workshop over 80 years ago has grown into a global glass, mechatronics, and technology company offering fully automated laboratory technology solutions, proprietary software, and application expertise.
 
@@ -71,7 +71,7 @@ What started as a craftsman’s workshop over 80 years ago has grown into a glob
 
 As companies are increasingly becoming data-driven, the demand for AI technology grows. AI technology enables enterprises to get insights to optimize operations and make more informed decisions.
 
-We aim to build the most advanced data analytics ecosystem for laboratory devices and digital services offered by BUCHI to scale business growth. To achieve this goal, we are focusing on making BUCHI services, instruments and processes smarter and more efficient through sustainable and pragmatic data-driven solutions.
+We aim to build the most advanced data analytics ecosystem for laboratory devices and digital services offered by BÜCHI to scale business growth. To achieve this goal, we are focusing on making BÜCHI services, instruments and processes smarter and more efficient through sustainable and pragmatic data-driven solutions.
 
 ### The Data Science team
 
@@ -82,7 +82,7 @@ We aim to build the most advanced data analytics ecosystem for laboratory device
 {{< figure src="team.png" title="" height="10%" width="10%" src="team.png" >}}
 
 
-We develop calibration models for NIR spectroscopy, automation tools, APIs and integrations that support business efficiency and processes at BUCHI.
+We develop calibration models for NIR spectroscopy, automation tools, APIs and integrations that support business efficiency and processes at BÜCHI.
 
 We succeed when our team amplifies the work of other teams, understand their pain points and concerns around data, and develop data products that provide universal value to employees across departments, roles, tenure, and data literacy levels.
 
