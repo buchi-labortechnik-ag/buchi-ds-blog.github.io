@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Open Source - Tag - BUCHI Data Science&#39;s Blog</title>
+        <link>https://buchi-data-science.github.io/tags/open-source/</link>
+        <description>Open Source - Tag - BUCHI Data Science&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>diaz.m@buchi.com (Michelle Diaz)</managingEditor>
+            <webMaster>diaz.m@buchi.com (Michelle Diaz)</webMaster><lastBuildDate>Mon, 28 Aug 2023 21:29:20 &#43;0200</lastBuildDate><atom:link href="https://buchi-data-science.github.io/tags/open-source/" rel="self" type="application/rss+xml" /><item>
+    <title>Introducing R-based open source software and web services into traditional company structures</title>
+    <link>https://buchi-data-science.github.io/posts/opensource-nir-libraries/</link>
+    <pubDate>Mon, 28 Aug 2023 21:29:20 &#43;0200</pubDate>
+    <author>Michelle Diaz</author>
+    <guid>https://buchi-data-science.github.io/posts/opensource-nir-libraries/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

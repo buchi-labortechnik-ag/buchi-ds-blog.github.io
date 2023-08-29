@@ -1,0 +1,40 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - Tag - BUCHI Data Science&#39;s Blog</title>
+        <link>https://buchi-data-science.github.io/tags/</link>
+        <description>Tags - Tag - BUCHI Data Science&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>diaz.m@buchi.com (Michelle Diaz)</managingEditor>
+            <webMaster>diaz.m@buchi.com (Michelle Diaz)</webMaster><lastBuildDate>Mon, 28 Aug 2023 21:29:20 &#43;0200</lastBuildDate><atom:link href="https://buchi-data-science.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Open Source</title>
+    <link>https://buchi-data-science.github.io/tags/open-source/</link>
+    <pubDate>Mon, 28 Aug 2023 21:29:20 &#43;0200</pubDate>
+    <author>Michelle Diaz</author>
+    <guid>https://buchi-data-science.github.io/tags/open-source/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>内容</title>
+    <link>https://buchi-data-science.github.io/tags/content/_index.zh-cn/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Michelle Diaz</author>
+    <guid>https://buchi-data-science.github.io/tags/content/_index.zh-cn/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>安装</title>
+    <link>https://buchi-data-science.github.io/tags/installation/_index.zh-cn/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Michelle Diaz</author>
+    <guid>https://buchi-data-science.github.io/tags/installation/_index.zh-cn/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>配置</title>
+    <link>https://buchi-data-science.github.io/tags/configuration/_index.zh-cn/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Michelle Diaz</author>
+    <guid>https://buchi-data-science.github.io/tags/configuration/_index.zh-cn/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

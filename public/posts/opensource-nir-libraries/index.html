@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Introducing R-based open source software and web services into traditional company structures - BUCHI Data Science&#39;s Blog</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Introducing R-based open source software and web services into traditional company structures" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://buchi-data-science.github.io/posts/opensource-nir-libraries/" />
+<meta property="article:published_time" content="2023-08-28T21:29:20+02:00" />
+<meta property="article:modified_time" content="2023-08-28T21:29:20+02:00" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introducing R-based open source software and web services into traditional company structures"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="BUCHI&#39;s Data Science blog">
+<meta name="apple-mobile-web-app-title" content="BUCHI&#39;s Data Science blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://buchi-data-science.github.io/posts/opensource-nir-libraries/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Introducing R-based open source software and web services into traditional company structures",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/buchi-data-science.github.io\/posts\/opensource-nir-libraries\/"
+        },"genre": "posts","keywords": "Open Source","wordcount":  2055 ,
+        "url": "https:\/\/buchi-data-science.github.io\/posts\/opensource-nir-libraries\/","datePublished": "2023-08-28T21:29:20+02:00","dateModified": "2023-08-28T21:29:20+02:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Michelle Diaz"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="BUCHI Data Science&#39;s Blog">BUCHI&#39;s Data Science blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/talks/"> Talks </a><a class="menu-item" href="/publications/"> Publications </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="BUCHI Data Science&#39;s Blog">BUCHI&#39;s Data Science blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/talks/" title="">Talks</a><a class="menu-item" href="/publications/" title="">Publications</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Introducing R-based open source software and web services into traditional company structures</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://immich.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Michelle Diaz</a></span>&nbsp;<span class="post-category">included in <a href="/categories/open-source/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Open Source</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-28">2023-08-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2055 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;10 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#about-büchi-and-nir-spectroscopy">About BÜCHI and NIR spectroscopy</a></li>
+    <li><a href="#challenges">Challenges</a>
+      <ul>
+        <li><a href="#1st-challenge-why-r-why-dont-you-rewrite-the-code-in-x-language">1st challenge: &ldquo;why R? Why don&rsquo;t you rewrite the code in X language?&rdquo;</a></li>
+      </ul>
+    </li>
+    <li><a href="#2nd-challenge-putting-r-into-production-that-language-is-not-suitable-for-production-r-is-single-threaded">2nd challenge: putting R into production, &ldquo;that language is not suitable for production&rdquo;, &ldquo;R is single threaded&rdquo;</a></li>
+    <li><a href="#3rd-challenge-lack-of-information-very-generalist">3rd challenge: Lack of information, very generalist</a></li>
+    <li><a href="#4th-challenge-open-source-is-not-safe">4th challenge: Open source is not safe</a></li>
+    <li><a href="#5th-challenge-software-systems-vs-ml-systems">5th Challenge: Software Systems vs ML systems</a></li>
+    <li><a href="#6th-challenge-cross-team-collaboration">6th challenge: Cross team collaboration</a></li>
+    <li><a href="#tips">Tips</a>
+      <ul>
+        <li><a href="#data-science-team">Data science Team</a></li>
+        <li><a href="#software-engineering-team">Software Engineering Team</a></li>
+        <li><a href="#both-teams">Both teams</a></li>
+      </ul>
+    </li>
+    <li><a href="#conlusions">Conlusions</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Creating reliable NIR predictive models is essential for customer satisfaction when using any NIR spectrometer. However, it is extremely challenging to get the right predictive model for each customer individually:</p>
+<ul>
+<li>Obtaining optimal training data is expensive and difficult to obtain.</li>
+<li>NIR predictive models require fine-tuning for each customer and product.</li>
+<li>Customers are mostly concerned about the performance of the predictive models.</li>
+</ul>
+<p>The time span from instrument installation to customer satisfaction can range up to 6 months or even more, which can create frustration.</p>
+<p>We have developed internal tools that allow to obtain a well-performing predictive model within a few minutes. However, in order to deploy the tool into an environment accessible to BÜCHI affiliates, we have had to overcome several challenges.</p>
+<p>In this post, we&rsquo;ll talk about how was it like integrating our R-based web services and libraries to the Software Department at BÜCHI.</p>
+<h2 id="about-büchi-and-nir-spectroscopy">About BÜCHI and NIR spectroscopy</h2>
+<p>Among other more than 50 products, BÜCHI is expert in the Near Infrared technology.</p>
+<p>But what is that?</p>
+<p>[PHOTO1][P3]</p>
+<p>This is a sample of animal feed.</p>
+<p>[PHOTO2][P4]</p>
+<p>This is a sensing system setup.</p>
+<p>[PHOTO3][P5]</p>
+<p>You irradiate the sample with light using a normal light bulb.</p>
+<p>[PHOTO4][P6]</p>
+<p>The sample absorbs light (or energy), and in this case, most of the light that is not absorbed, it is then reflected.</p>
+<p>The way in which the sample absorbs energy is determined by the components of the sample and their amount. This is the principle that allows us to later quantify such components.</p>
+<p>[PHOTO5][P7]</p>
+<p>There is a detector that capturates the light reflected​.</p>
+<p>The data of the reflected light is transmitted to a processing unit. The reflected light is recorded as a signal or spectrum (near infrared spectrum).</p>
+<p>This is what the system measures, only the signal (which is meaningless for our end users)</p>
+<p>[PHOTO6][P8]</p>
+<p>The challenge is to translate that signal into something meaningful.</p>
+<p>[PHOTO7][P9]</p>
+<p>To make the NIR predicti​ve models, they translate the NIR signal or spectrum into relevant property values.</p>
+<p>In summary, NIR sensing technology comprises:</p>
+<ul>
+<li>Hardware</li>
+<li>Software</li>
+<li>NIR predictive models</li>
+</ul>
+<p>In contrast with conventional lab methods that are very expensive and it takes days or weeks to get results, this technology allows us to build models
+to reduce the analysis of a sample to only 15 seconds for all the properties or response variables you need like, moisture, protein or fat content of a sample. And it is cheap, you only need light.</p>
+<p>The predictive models are part of the sensing system, they need to be shipped to end users/customers along with the necessary hardware and software required to operate the instrument.</p>
+<p>Building reliable NIR predictive models are very important for our business, our instruments cannot do much without them for our end customers.</p>
+<h2 id="challenges">Challenges</h2>
+<h3 id="1st-challenge-why-r-why-dont-you-rewrite-the-code-in-x-language">1st challenge: &ldquo;why R? Why don&rsquo;t you rewrite the code in X language?&rdquo;</h3>
+<p>In some cases, the Data Science and Software departments have different tools and use different programming languages. This is the case at BÜCHI. One of the challenges we faced is people questioning why we, Data Scientists and ML Engineers use R. Following by a &ldquo;Why don&rsquo;t <em>we</em> rewrite the code in X?&quot;.</p>
+<p>While rewriting code can be advantageous under very specific circumstances such as:</p>
+<ul>
+<li>
+<p><strong>Complicated on-boarding:</strong> When the process of onboarding new developers on a project is a hassle and takes a couple of months.</p>
+</li>
+<li>
+<p><strong>Legacy system:</strong> When there&rsquo;s a legacy system that still works, but that no one can touch it because otherwise you could create a chaos.</p>
+</li>
+<li>
+<p><strong>Unreadable code:</strong> When no one, not even the most skilled person can understand the code.</p>
+</li>
+<li>
+<p><strong>Non reusable code:</strong> When you can&rsquo;t add new features without a complete rewrite of the existing source code or provoking a domino effect.</p>
+</li>
+<li>
+<p><strong>Lack of documentation:</strong> When the documentation is not good enough, or worse case, there&rsquo;s no documentation.</p>
+</li>
+<li>
+<p><strong>Infinite bugs:</strong> When you cannot solve a bug without introducing another one.</p>
+</li>
+<li>
+<p><strong>Performance issues:</strong> When rewriting the code in another language would considerably improve the performance of the system.</p>
+</li>
+<li>
+<p><strong>Unmaintainable:</strong> When some of the technologies or dependencies of the system got oudated and are no longer maintained.</p>
+</li>
+<li>
+<p><strong>Non scalable:</strong> When you are planning to increase the number of users, and the old system won&rsquo;t be able handle it.</p>
+</li>
+<li>
+<p><strong>CI/CD complicated:</strong> Or when you find it hard to set Continuous Integration or Deployment.</p>
+</li>
+</ul>
+<p>In our case, there was no sound reason to rewrite the R packages we had developed. Our code was very well documented, tested and maintained. If you ever put R based systems into production, you may agree that setting CI/CD pipelines for R code can be challenging, but it is definetely not impossible. So what was behind the &ldquo;Why don&rsquo;t you rewrite the code?&quot;?</p>
+<p>We, both the DS team and the SWE team had different development and documentation guidelines, and even different methodologies and culture.</p>
+<p>Eventually, we found that the real issue was a lack of trust between the DS and SWE departments. This mistrust manifested in various ways, including resistance to using each other&rsquo;s tools and code.</p>
+<p>Addressing this lack of trust is key to resolving conflicts and improving collaboration between the teams.</p>
+<h2 id="2nd-challenge-putting-r-into-production-that-language-is-not-suitable-for-production-r-is-single-threaded">2nd challenge: putting R into production, &ldquo;that language is not suitable for production&rdquo;, &ldquo;R is single threaded&rdquo;</h2>
+<p>Every time we faced a downside, or a huge question, there was always someone telling us &ldquo;That language is not suitable for prodyction&rdquo; or &ldquo;It is single threaded&rdquo;.</p>
+<p>This concern comes from the belief that R systems cannot scale. The fact that R is single threaded does not mean that you cannot scale.</p>
+<!-- raw HTML omitted -->
+<h2 id="3rd-challenge-lack-of-information-very-generalist">3rd challenge: Lack of information, very generalist</h2>
+<p>Another challenge we encountered is that, at the time of developing the libraries and investigating how to put R into production, the information available was scarce and very shallow. Because of this, it was also more complicated to facilitate information to the software team where they could validate or contrast what we were doing.</p>
+<p>Actually, there were more blogs against putting R into production than blogs advocating for it. This is changing tho. You can still find people warning you about putting R into production, but you can also find more resources and tips to do it.</p>
+<p>Something I would like to add is that we noticed that most of the blogs are either biased towards an specific language rather than R, or they are wrongly informed.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/opensource-nir-libraries/articleagainstR.png"
+        data-srcset="/posts/opensource-nir-libraries/articleagainstR.png, /posts/opensource-nir-libraries/articleagainstR.png 1.5x, /posts/opensource-nir-libraries/articleagainstR.png 2x"
+        data-sizes="auto"
+        alt="/posts/opensource-nir-libraries/articleagainstR.png"
+        title="Article against putting R into production" width="1164" height="315" /></p>
+<p>This is an extract of a blog, from last year. Let&rsquo;s quickly address these concerns:</p>
+<ul>
+<li>There&rsquo;s many ways of handling versions. You can package your tools, configure renv and even create a docker container for an extra layer of isolation.</li>
+</ul>
+<p>We strongly suggest to be careful with what one publishes in a blog because it can really mislead people.</p>
+<h2 id="4th-challenge-open-source-is-not-safe">4th challenge: Open source is not safe</h2>
+<p>One of the misconceptions about open-source code is that it is not safe because it is available to the public and free for anyone to use, modify, or inspect. On the contrary, open source:</p>
+<ul>
+<li>helps building trust in the chemometrics solutions</li>
+<li>enables companies to stay on top of new scientific advancements</li>
+<li>accelerates the modernization of the NIR industry</li>
+<li>is more cost-effective than a proprietary solution</li>
+<li>gives enterprises the ability to attract better talent</li>
+<li>enables transparency, accessibility and customizability for end users</li>
+</ul>
+<p>Any kind of code (closed source or open source) brings security threats to a project. It&rsquo;s the developers responsibility to develop secure and reliable code, because security breaches can happen due to a number of mistakes such as:</p>
+<ul>
+<li>not following security guidelines</li>
+<li>improperly setting up software</li>
+<li>using easy passwords</li>
+<li>lack of data validation processes</li>
+<li>absence of data encryption techniques</li>
+</ul>
+<p>A commercial licence doesn&rsquo;t guarantee security. Unlike proprietary software, open source projects are transparent about potential vulnerabilities. Whereas with paid software you simply have to trust the vendor. With open source code you can also take part in code review, make suggestions, raise issues, collaborate with other people to use or adapt your own version, release your own patch, or even disable certain functionality.</p>
+<h2 id="5th-challenge-software-systems-vs-ml-systems">5th Challenge: Software Systems vs ML systems</h2>
+<p>Deploying Machine Learning systems requires evaluating and monitoring performance metrics in addition to traditional system operational metrics.</p>
+<p>The tricky part with Machine Learning systems is that you have to take care of both system operational metrics and Machine Learning performance metrics. It can represent a huge learning curve for SWE teams with no experience in deploying ML systems.</p>
+<p>In traditional software, we mostly care about a system&rsquo;s operational expectations: whether the system executes its logics within the expected operational metrics such as latency, throughput, availability, etc., whereas in ML based software you can encounter things like data collection and preprocessing problems, poor hyperparameters, data distribution shifts that can cause a model&rsquo;s performance to deteriorate over time.</p>
+<p>Operational expectation violations are SORT OF easier to detect, because they normally tell you what is wrong, and based on those clues you can then act. You kinda know what to do if you have a timeout, or an out of memory error, etc. HOWEVER, ML performance expectation failures are harder to detect as it requires measuring and monitoring the performance of ML models in production.</p>
+<h2 id="6th-challenge-cross-team-collaboration">6th challenge: Cross team collaboration</h2>
+<p>One can succesfully develop R packages, convince decision makers about business value, and provide enough information to follow best practices for interoperability and building a multi-lingual team of teams, but if not all people gets onboard, it just won&rsquo;t work.</p>
+<p>It can take more time to define the collaboration than actually collaborating to build the systems because of differences on work methodologies (like agile-based frameworks), guidelines and conventions.</p>
+<p>On top of that, experimentation comprises a huge part of developing ML systems, whereas it is not of the same magnitude in SWE teams.</p>
+<p>We all had to get out of our comfort zone.</p>
+<h2 id="tips">Tips</h2>
+<p>There&rsquo;s no fixed recipe to follow to achieve that, but here are some of the things that helped us to build a multi-lingual team in a traditional software company:</p>
+<h3 id="data-science-team">Data science Team</h3>
+<ul>
+<li>Rapid prototyping to present solutions and show how it would look like in the future</li>
+<li>Following good software engineering practices</li>
+<li>Providing detailed documentation</li>
+<li>Getting involved and learn about the tools the software department uses</li>
+<li>Proposing options for integration with software tools</li>
+</ul>
+<h3 id="software-engineering-team">Software Engineering Team</h3>
+<ul>
+<li>Being open to experiment, fail and iterate.</li>
+<li>Understanding how data science tools can create value.</li>
+<li>Introducing a data culture.</li>
+<li>Switching mindset from a closed software engineering way of work to a more holistic one.</li>
+<li>Expanding from a narrow focus on technical engineering to a more inclusive and collaborative approach that values diverse perspectives and beliefs.</li>
+</ul>
+<h3 id="both-teams">Both teams</h3>
+<ul>
+<li>Putting business value first.</li>
+<li>This can be achieved by developing a strong knowledge domain.</li>
+<li>Conducting code reviews and workshop sessions</li>
+<li>Defining and standardize communication language and terminology.</li>
+<li>Establishing API contracts.</li>
+<li>Involving external experts in the process to get nonbiased feedback.</li>
+<li>Creating an open and safe environment for team bonding.</li>
+</ul>
+<h2 id="conlusions">Conlusions</h2>
+<p>Projects shouldn&rsquo;t be language-specific. Focusing in the value generated rather than in the tooling used improves cross-team collaboration. Teams must be willing to experiment, communicate effectively, and adopt a more inclusive and collaborative approach that values diverse perspectives and beliefs.</p>
+<p>Our collective efforts, –which involve rapid prototyping, adherence to software engineering best practices, and embracing diversity– have illuminated a path forward. The knowledge gained from these experiences enables us to enhance instrument performance, drive innovation, and ultimately contribute to the progress of the NIR ecosystem.</p>
+<p>The NIR industry would highly benefit from open-source chemometrics software, novel collaboration methods, and a greater emphasis on data transparency, explainability, and reproducibility. By doing so, we can establish a strong foundation for building reliable NIR predictive models that meet customer needs and contribute to the modernization of the NIR industry.</p>
+<p>Embracing open source can greatly contribute to flexibilize and modernize the NIR business ecosystem.</p>
+<p>Practitioners, regardless of their institutional affiliations or resource constraints, can partake in this transformative journey and push the boundaries of NIR&rsquo;s potential.</p>
+<h2 id="references">References</h2>
+<p>[1] Blind, et al. (2021). The impact of open source software and hardware on technological independence, competitiveness and innovation in the EU economy. European Commission.</p>
+<p>[2] Robbins, et al. (2018). Open source software as intangible capital: Measuring the cost and impact of free digital tools. 6th International Monetary Fund Statistical Forum.</p>
+<p>[3] Christensen, Ghose &amp; Mathur. (2020). Economic impact of open source software on competition, innovation, and development in India. National Conference on Economics of Competition Law 2020, Competition Commission of India.</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-08-28</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://buchi-data-science.github.io/posts/opensource-nir-libraries/" data-title="Introducing R-based open source software and web services into traditional company structures" data-hashtags="Open Source"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://buchi-data-science.github.io/posts/opensource-nir-libraries/" data-hashtag="Open Source"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://buchi-data-science.github.io/posts/opensource-nir-libraries/" data-title="Introducing R-based open source software and web services into traditional company structures"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://buchi-data-science.github.io/posts/opensource-nir-libraries/" data-title="Introducing R-based open source software and web services into traditional company structures"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://buchi-data-science.github.io/posts/opensource-nir-libraries/" data-title="Introducing R-based open source software and web services into traditional company structures"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/open-source/">Open Source</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.68.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://immich.github.io/" target="_blank">Michelle Diaz</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
