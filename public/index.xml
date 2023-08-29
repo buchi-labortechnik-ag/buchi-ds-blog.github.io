@@ -1,17 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>BUCHI Data Science&#39;s Blog</title>
-        <link>https://buchi-data-science.github.io/</link>
+        <link>https://buchi-labortechnik-ag.github.io/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>diaz.m@buchi.com (Michelle Diaz)</managingEditor>
             <webMaster>diaz.m@buchi.com (Michelle Diaz)</webMaster><lastBuildDate>Mon, 28 Aug 2023 18:20:34 &#43;0200</lastBuildDate>
-            <atom:link href="https://buchi-data-science.github.io/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="https://buchi-labortechnik-ag.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Introducing R-based open source software and web services into traditional company structures</title>
-    <link>https://buchi-data-science.github.io/posts/opensource-nir-libraries/</link>
+    <link>https://buchi-labortechnik-ag.github.io/posts/opensource-nir-libraries/</link>
     <pubDate>Mon, 28 Aug 2023 21:29:20 &#43;0200</pubDate>
     <author>Michelle Diaz</author>
-    <guid>https://buchi-data-science.github.io/posts/opensource-nir-libraries/</guid>
+    <guid>https://buchi-labortechnik-ag.github.io/posts/opensource-nir-libraries/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

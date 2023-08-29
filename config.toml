@@ -1,4 +1,4 @@
-baseURL = "https://buchi-ds-blog.github.io"
+baseURL = "https://buchi-labortechnik-ag.github.io"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
